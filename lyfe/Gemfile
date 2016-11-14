@@ -25,6 +25,9 @@ gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# tools
+gem 'awesome_print'
+
 group :development, :test do
   gem 'byebug'
   gem 'pry'
