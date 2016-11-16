@@ -1,0 +1,13 @@
+@import 'colors';
+
+.flat {
+ border: 0;
+ box-shadow:none;
+ border-radius: 0px;
+}
+
+.btn-orange {
+  color: $white;
+  background-color: $orange;
+  border-color: #ccc;
+}
