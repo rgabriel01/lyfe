@@ -15,7 +15,7 @@
             .text-white.fs16.mb30 Enter your email address to be the first to know when we launch it.
           .row.mr10.ml10
             .form-container.pt25.pr25.pl25.pb10
-              form
+              = form_for :job, url: early_registrants_path do |f|
                 .form-group
                   input type="text" class="form-control flat ht50" id="name" name='name' placeholder="Name"
                 .form-group
