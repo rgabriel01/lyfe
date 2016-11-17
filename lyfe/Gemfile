@@ -19,7 +19,7 @@ gem 'devise'
 #trailblazer
 gem 'uber', '0.0.15'
 gem 'trailblazer', '1.1.1'
-gem 'trailblazer-rails'
+gem 'trailblazer-rails', '0.4.0'
 gem "cells"
 
 # Use ActiveModel has_secure_password
