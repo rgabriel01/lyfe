@@ -15,11 +15,14 @@
             .text-white.fs16.mb30 Enter your email address to be the first to know when we launch it.
           .row.mr10.ml10
             .form-container.pt25.pr25.pl25.pb10
-              = form_for :job, url: early_registrants_path do |f|
+              = form_for :job, url: early_registrants_path, :html => {'data-toggle' => 'validator', 'role' => 'form' } do |f|
                 .form-group
-                  input type="text" class="form-control flat ht50" id="name" name='name' placeholder="Name"
+                  input type="text" class="form-control flat ht50" id="name" name='name' placeholder="Name" required=true
+                  .help-block.with-errors.text-left
                 .form-group
-                  input type="text" class="form-control flat ht50" id="surname" name='surname' placeholder="Surname"
+                  input type="text" class="form-control flat ht50" id="surname" name='surname' placeholder="Surname" required=true
+                  .help-block.with-errors.text-left
                 .form-group
-                  input type="text" class="form-control flat ht50" id="email" name='email' placeholder="Email"
+                  input type="email" class="form-control flat ht50" id="email" name='email' placeholder="Email" required=true
+                  .help-block.with-errors.text-left
                 button type="submit" class="btn btn-orange flat ht50 wt100p mb10 fs20 fw700" Inspire Me
