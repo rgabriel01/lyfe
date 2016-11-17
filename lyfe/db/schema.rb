@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160927225909) do
+ActiveRecord::Schema.define(version: 20161117062442) do
+
+  create_table "early_registrants", force: :cascade do |t|
+    t.string   "full_name",  limit: 255, default: "", null: false
+    t.string   "email",      limit: 255, default: "", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "early_registrants", ["email"], name: "index_early_registrants_on_email", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
