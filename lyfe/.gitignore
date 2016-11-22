@@ -19,3 +19,8 @@
 .DS_Store
 /vendor/.DS_Store
 /vendor/assets/.DS_Store
+/config/application.yml
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
