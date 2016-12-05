@@ -19,20 +19,7 @@ module Lyfe
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    Rails.application.config.assets.precompile += %w(
-        bootstrap.min.js
-        validator.min.js
-
-        bootstrap-theme.css
-        bootstrap-theme.css.map
-        bootstrap-theme.min.css
-        bootstrap-theme.min.css.map
-        bootstrap.css
-        bootstrap.css.map
-        bootstrap.min.css
-        bootstrap.min.css
-    )
-    config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets')
+    # config.assets.paths << Rails.root.join('vendor', 'assets', 'stylesheets')
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
